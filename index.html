@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIYO Bot - Policies</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            background: linear-gradient(45deg, #1a202c, #2d3748);
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(45, 55, 72, 0.6);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            border-radius: 16px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+        }
+        .section-header {
+            background: linear-gradient(90deg, #4FD1C5, #3182CE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="container mx-auto max-w-5xl">
+        <div class="glass-card p-10 text-gray-100">
+            <div class="text-center mb-10">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <button onclick="toggleContent()" id="toggleBtn" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+                        Show Privacy Policy
+                    </button>
+                </div>
+
+                <h1 id="pageTitle" class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+                    MIYO Bot Terms of Service
+                </h1>
+                <p class="text-xl text-gray-400">Last Updated: December 2024</p>
+            </div>
+
+            <div id="termsContent">
+                <div class="space-y-8">
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">1. Acceptance of Terms</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">By accessing or using the MIYO Discord Bot, you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use the bot.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">2. User Eligibility</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• Users must be at least 13 years old to use MIYO Bot</p>
+                            <p class="text-gray-300">• Compliance with Discord's Terms of Service is mandatory</p>
+                            <p class="text-gray-300">• Users are responsible for maintaining account security</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">3. Bot Usage Rights</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• MIYO Bot is provided "as-is" without warranty</p>
+                            <p class="text-gray-300">• Third World Development reserves the right to modify, suspend, or discontinue the bot</p>
+                            <p class="text-gray-300">• Unauthorized bot modification or exploitation is prohibited</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">4. Data and Privacy</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• MIYO Bot may collect and store server-specific configuration data</p>
+                            <p class="text-gray-300">• User data is processed in accordance with our Privacy Policy</p>
+                            <p class="text-gray-300">• Data may be retained for service improvement and troubleshooting</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">5. Prohibited Conduct</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• No use for illegal, harmful, or malicious purposes</p>
+                            <p class="text-gray-300">• No attempt to access unauthorized bot functionalities</p>
+                            <p class="text-gray-300">• No harassment, spam, or abuse of bot commands</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">6. Intellectual Property</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">All intellectual property rights for MIYO Bot are owned by CYBER under Third World Development. Unauthorized reproduction, distribution, or creation of derivative works is strictly prohibited.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">7. Limitation of Liability</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">Third World Development shall not be liable for any direct, indirect, incidental, or consequential damages arising from bot usage.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="privacyContent" style="display:none;">
+                <div class="space-y-8">
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">1. Information We Collect</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• Server configuration settings</p>
+                            <p class="text-gray-300">• Command usage statistics</p>
+                            <p class="text-gray-300">• Discord server and user IDs for functionality</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">2. How We Use Your Data</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• Providing and improving bot services</p>
+                            <p class="text-gray-300">• Troubleshooting and technical support</p>
+                            <p class="text-gray-300">• Detecting and preventing abuse</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">3. Data Storage and Security</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• Data is stored securely with encryption</p>
+                            <p class="text-gray-300">• Access limited to essential personnel</p>
+                            <p class="text-gray-300">• Data retained only as necessary for bot functionality</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">4. Data Sharing</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">MIYO Bot does not sell, trade, or rent your personal information to third parties. Data may be shared only to comply with legal obligations or protect our rights.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">5. User Rights</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg space-y-4">
+                            <p class="text-gray-300">• Right to request data deletion</p>
+                            <p class="text-gray-300">• Ability to opt-out of non-essential data collection</p>
+                            <p class="text-gray-300">• Contact us for data-related inquiries</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">6. Cookies and Tracking</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">MIYO Bot may use minimal tracking for essential functionalities. No third-party tracking or advertising cookies are used.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl font-semibold mb-5 section-header">7. Policy Updates</h2>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-gray-300">We may update this privacy policy periodically. Users will be notified of significant changes via our support channels.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <div class="mb-6">
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <span class="badge">© 2024 Third World Development</span>
+                        <span id="footerBadge" class="badge">MIYO Bot - Terms of Service</span>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-400">📧 Contact: helpmiyocontact@gmail.com</p>
+                        <div class="flex justify-center space-x-6 mt-4">
+                            <a href="https://discord.gg/cWPwU2nwBh" target="_blank" class="text-blue-300 hover:text-white transition duration-300">
+                                🤖 Support Server
+                            </a>
+                            <a href="https://discord.com/oauth2/authorize?client_id=1297956800427065475" target="_blank" class="text-blue-300 hover:text-white transition duration-300">
+                                🔗 Bot Invite
+                            </a>
+                            <a href="#" target="_blank" class="text-blue-300 hover:text-white transition duration-300">
+                                📖 Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            const termsContent = document.getElementById('termsContent');
+            const privacyContent = document.getElementById('privacyContent');
+            const toggleBtn = document.getElementById('toggleBtn');
+            const pageTitle = document.getElementById('pageTitle');
+            const footerBadge = document.getElementById('footerBadge');
+
+            if (termsContent.style.display !== 'none') {
+                termsContent.style.display = 'none';
+                privacyContent.style.display = 'block';
+                toggleBtn.innerHTML = 'Show Terms of Service';
+                pageTitle.innerHTML = 'MIYO Bot Privacy Policy';
+                footerBadge.innerHTML = 'MIYO Bot - Privacy Policy';
+                toggleBtn.classList.remove('bg-blue-600');
+                toggleBtn.classList.add('bg-green-600');
+            } else {
+                termsContent.style.display = 'block';
+                privacyContent.style.display = 'none';
+                toggleBtn.innerHTML = 'Show Privacy Policy';
+                pageTitle.innerHTML = 'MIYO Bot Terms of Service';
+                footerBadge.innerHTML = 'MIYO Bot - Terms of Service';
+                toggleBtn.classList.remove('bg-green-600');
+                toggleBtn.classList.add('bg-blue-600');
+            }
+        }
+    </script>
+</body>
+</html>
